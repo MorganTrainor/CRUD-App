@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_colour"
+    tools:context=".Holiday_Requests">
+
+    <TextView
+        android:id="@+id/Holiday_requests_title"
+        android:layout_width="305dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="88dp"
+        android:text="Holiday Requests"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/text_colour"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holreq_homebutton" />
+
+    <Button
+        android:id="@+id/holreq_homebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_colour"
+        android:text="Homepage"
+        android:textColor="@color/button_text_colour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HolReq_Placeholder"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="55dp"
+        android:background="#30FFFFFF"
+        android:text="ID | Forename | Surname | Duration"
+        android:textAlignment="center"
+        android:textColor="@color/text_colour"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Holiday_requests_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
