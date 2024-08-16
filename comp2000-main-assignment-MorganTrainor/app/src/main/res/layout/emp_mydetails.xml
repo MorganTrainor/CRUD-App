@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_details"
+    android:background="@color/background_colour">
+
+    <Button
+        android:id="@+id/mydetails_homebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="278dp"
+        android:backgroundTint="@color/button_colour"
+        android:textColor="@color/button_text_colour"
+        android:text="Homepage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mydetails_title"
+        android:layout_width="229dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="91dp"
+        android:text="My Details"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/text_colour"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mydetails_name"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/text_colour"
+        android:textColorHint="@color/text_colour"
+        app:layout_constraintBottom_toTopOf="@+id/mydetails_dob"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mydetails_ethnicity"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="233dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ethnicity"
+        android:textColor="@color/text_colour"
+        android:textColorHint="@color/text_colour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mydetails_phone" />
+
+    <EditText
+        android:id="@+id/mydetails_phone"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="233dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone Number"
+        android:textColor="@color/text_colour"
+        android:textColorHint="@color/text_colour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mydetails_gender"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Gender"
+        android:textColor="@color/text_colour"
+        android:textColorHint="@color/text_colour"
+        app:layout_constraintBottom_toTopOf="@+id/mydetails_ethnicity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mydetails_dob" />
+
+    <EditText
+        android:id="@+id/mydetails_dob"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="D.O.B"
+        android:textColor="@color/text_colour"
+        android:textColorHint="@color/text_colour"
+        app:layout_constraintBottom_toTopOf="@+id/mydetails_phone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mydetails_address"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address"
+        android:textColor="@color/text_colour"
+        android:textColorHint="@color/text_colour"
+        app:layout_constraintBottom_toTopOf="@+id/mydetails_gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mydetails_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
